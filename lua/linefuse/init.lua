@@ -1,15 +1,15 @@
 local M = {}
 
---- @class LineConcatOpts
+--- @class LinefuseOpts
 --- @field join_char? string
 --- @field trim_blank? boolean
 --- @field input? boolean
 
 function M.setup() end
 
---- @param opts LineConcatOpts
-function M.line_concat(opts)
-  require("concat-line.core").line_concat(opts)
+--- @param opts LinefuseOpts
+function M.linefuse(opts)
+	require("linefuse.core").line_concat(opts)
 end
 
 return M
